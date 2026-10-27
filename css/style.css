@@ -231,3 +231,272 @@ body{
     text-align: center;
   }
 }
+
+.pagina-hoteis {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.secao-hoteis {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-hoteis {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #eeeedd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-hoteis h1 {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.titulo-hoteis p {
+  font-size: 16px;
+  color: #666666;
+}
+
+.card-hotel {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  min-height: 280px;
+  margin-bottom: 35px;
+  background-color: #eeeedd;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hotel:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.imagem-hotel {
+  width: 38%;
+  min-width: 320px;
+}
+
+.imagem-hotel img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.conteudo-hotel {
+  flex: 1;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.conteudo-hotel h2 {
+  font-size: 27px;
+  color: #222222;
+  margin-bottom: 18px;
+}
+
+.conteudo-hotel p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #666666;
+  margin-bottom: 25px;
+  max-width: 650px;
+}
+
+.botao-hotel {
+  text-decoration: none;
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+  padding: 13px 27px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao-hotel:hover {
+  background-color: rgb(10, 58, 9);
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .pagina-hoteis {
+    padding: 30px 15px;
+  }
+
+  .titulo-hoteis h1 {
+    font-size: 30px;
+  }
+
+  .card-hotel {
+    flex-direction: column;
+  }
+
+  .imagem-hotel {
+    width: 100%;
+    min-width: 0;
+    height: 230px;
+  }
+
+  .conteudo-hotel {
+    padding: 25px;
+  }
+
+  .conteudo-hotel h2 {
+    font-size: 23px;
+  }
+}
+
+.pagina-contato {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.secao-contato {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-contato {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #eeeedd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-contato h1 {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.titulo-contato p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.conteudo-contato {
+  display: flex;
+  gap: 35px;
+  align-items: stretch;
+}
+
+.informacoes-contato,
+.formulario-contato {
+  flex: 1;
+  background-color: #eeeedd;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.informacoes-contato h2 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.informacoes-contato > p {
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.item-contato {
+  margin-bottom: 25px;
+}
+
+.item-contato h3 {
+  font-size: 17px;
+  color: rgb(5, 160, 0);
+  margin-bottom: 6px;
+}
+
+.item-contato p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.5;
+}
+
+.campo-formulario {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.campo-formulario label {
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 8px;
+}
+
+.campo-formulario input,
+.campo-formulario textarea {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  outline: none;
+  background-color: #ffffff;
+}
+
+.campo-formulario textarea {
+  resize: vertical;
+}
+
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+  border-color: rgb(5, 160, 0);
+}
+
+.botao-contato {
+  border: none;
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-contato:hover {
+  background-color: rgb(10, 58, 9);
+}
+
+@media (max-width: 768px) {
+  .pagina-contato {
+    padding: 30px 15px;
+  }
+
+  .conteudo-contato {
+    flex-direction: column;
+  }
+
+  .titulo-contato h1 {
+    font-size: 30px;
+  }
+
+  .informacoes-contato,
+  .formulario-contato {
+    padding: 25px;
+  }
+}
