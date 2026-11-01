@@ -3,9 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+
+body {
   background-image: url(../img/fundositepb.jpg);
-  ;
 }
 
 .barra-navegacao {
@@ -25,8 +25,8 @@ body{
   top: 10px;
 }
 
-.logonav img{
-    height: 40px;
+.logonav img {
+  height: 40px;
 }
 
 .menu-links {
@@ -42,13 +42,13 @@ body{
 }
 
 .menu-links a {
-  font-family : Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #444768c9;
   text-decoration: none;
   padding: 12px 25px;
   transition: all 0.2s ease;
-  font-weight:bold ;
+  font-weight: bold;
 }
 
 .menu-links a:hover,
@@ -138,6 +138,7 @@ body{
     align-items: center;
   }
 }
+
 .rodape {
   width: 100%;
   background-color: #25292b;
@@ -212,17 +213,13 @@ body{
   color: #aaaaaa;
 }
 
-
 @media (max-width: 900px) {
-
   .conteudo-rodape {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 @media (max-width: 600px) {
-
   .conteudo-rodape {
     grid-template-columns: 1fr;
   }
@@ -264,13 +261,14 @@ body{
 
 .card-hotel {
   display: flex;
-  align-items: stretch;
+  align-items: center;
   width: 100%;
-  min-height: 280px;
+  min-height: 340px;
   margin-bottom: 35px;
   background-color: #eeeedd;
   border-radius: 12px;
-  overflow: hidden;
+  padding: 30px;
+  gap: 35px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -281,8 +279,10 @@ body{
 }
 
 .imagem-hotel {
-  width: 38%;
-  min-width: 320px;
+  width: 420px;
+  height: 280px;
+  min-width: 420px;
+  flex-shrink: 0;
 }
 
 .imagem-hotel img {
@@ -290,11 +290,12 @@ body{
   height: 100%;
   display: block;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .conteudo-hotel {
   flex: 1;
-  padding: 35px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -341,16 +342,19 @@ body{
 
   .card-hotel {
     flex-direction: column;
+    padding: 20px;
+    gap: 25px;
   }
 
   .imagem-hotel {
     width: 100%;
-    min-width: 0;
     height: 230px;
+    min-width: 0;
   }
 
   .conteudo-hotel {
-    padding: 25px;
+    width: 100%;
+    padding: 0;
   }
 
   .conteudo-hotel h2 {
@@ -482,6 +486,14 @@ body{
   background-color: rgb(10, 58, 9);
 }
 
+#mensagem-status {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(5, 160, 0);
+}
+
 @media (max-width: 768px) {
   .pagina-contato {
     padding: 30px 15px;
@@ -497,6 +509,370 @@ body{
 
   .informacoes-contato,
   .formulario-contato {
+    padding: 25px;
+  }
+}
+
+.pagina-turismo {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.secao-turismo {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-turismo {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #eeeedd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-turismo h1 {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 12px;
+}
+
+.titulo-turismo p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 850px;
+  margin: auto;
+}
+
+.area-tabela-turismo {
+  background-color: #eeeedd;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.area-tabela-turismo h2 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.tabela-responsiva {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-turismo {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabela-turismo th,
+.tabela-turismo td {
+  padding: 16px 18px;
+  text-align: left;
+  border-bottom: 1px solid #dddddd;
+}
+
+.tabela-turismo th {
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.tabela-turismo td {
+  font-size: 14px;
+  color: #555555;
+}
+
+.tabela-turismo tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+.tabela-turismo tbody tr:hover {
+  background-color: #e8f5e8;
+}
+
+@media (max-width: 768px) {
+  .pagina-turismo {
+    padding: 30px 15px;
+  }
+
+  .titulo-turismo {
+    padding: 25px 20px;
+  }
+
+  .titulo-turismo h1 {
+    font-size: 30px;
+  }
+
+  .area-tabela-turismo {
+    padding: 20px;
+  }
+
+  .area-tabela-turismo h2 {
+    font-size: 23px;
+  }
+
+  .tabela-turismo {
+    min-width: 700px;
+  }
+}
+
+.pagina-historia {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.apresentacao-historia {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+  padding: 40px;
+  background-color: #eeeedd;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.texto-historia {
+  flex: 1;
+}
+
+.texto-historia h1 {
+  font-size: 40px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.texto-historia p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.imagem-historia {
+  width: 430px;
+  height: 300px;
+  flex-shrink: 0;
+}
+
+.imagem-historia img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.secao-linha-tempo,
+.secao-midia-historia,
+.secao-curiosidades {
+  max-width: 1100px;
+  margin: 0 auto 50px;
+}
+
+.titulo-historia {
+  text-align: center;
+  background-color: #eeeedd;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-historia h2 {
+  font-size: 30px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+.titulo-historia p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.linha-tempo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.card-historia {
+  background-color: #eeeedd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-historia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
+}
+
+.card-historia h3 {
+  font-size: 26px;
+  color: rgb(5, 160, 0);
+  margin-bottom: 8px;
+}
+
+.card-historia h4 {
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.card-historia p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.conteudo-midia {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.bloco-video,
+.bloco-audio {
+  flex: 1;
+  background-color: #eeeedd;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.bloco-video h3,
+.bloco-audio h3 {
+  font-size: 22px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.bloco-video video {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.bloco-audio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.bloco-audio p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.bloco-audio audio {
+  width: 100%;
+}
+
+.caixa-curiosidade {
+  background-color: #eeeedd;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+#texto-curiosidade {
+  min-height: 55px;
+  font-size: 17px;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.botoes-curiosidade {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+#botao-curiosidade,
+#botao-todas-curiosidades {
+  border: none;
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#botao-curiosidade:hover,
+#botao-todas-curiosidades:hover {
+  background-color: rgb(10, 58, 9);
+  transform: scale(1.03);
+}
+
+#lista-curiosidades {
+  margin-top: 30px;
+  text-align: left;
+}
+
+#lista-curiosidades ul {
+  list-style-position: inside;
+}
+
+#lista-curiosidades li {
+  font-size: 15px;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+@media (max-width: 768px) {
+  .pagina-historia {
+    padding: 30px 15px;
+  }
+
+  .apresentacao-historia {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .texto-historia h1 {
+    font-size: 32px;
+  }
+
+  .imagem-historia {
+    width: 100%;
+    height: 230px;
+  }
+
+  .linha-tempo {
+    grid-template-columns: 1fr;
+  }
+
+  .conteudo-midia {
+    flex-direction: column;
+  }
+
+  .titulo-historia h2 {
+    font-size: 25px;
+  }
+
+  .caixa-curiosidade {
     padding: 25px;
   }
 }
