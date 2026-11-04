@@ -3,11 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background-image: url(../img/fundositepb.jpg);
 }
-
 .barra-navegacao {
   width: 100%;
   background-color: #ffffffcb;
@@ -18,17 +16,14 @@ body {
   left: 0;
   z-index: 1000;
 }
-
 .logonav {
   position: absolute;
   left: 20px;
   top: 10px;
 }
-
 .logonav img {
   height: 40px;
 }
-
 .menu-links {
   display: flex;
   justify-content: center;
@@ -36,11 +31,9 @@ body {
   list-style: none;
   width: 100%;
 }
-
 .menu-links li {
   margin: 0 10px;
 }
-
 .menu-links a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
@@ -50,7 +43,6 @@ body {
   transition: all 0.2s ease;
   font-weight: bold;
 }
-
 .menu-links a:hover,
 .menu-links a.ativo {
   background-color: #a03232;
@@ -58,7 +50,6 @@ body {
   text-decoration: none;
   font-weight: bold;
 }
-
 .cabecalho-descolado {
   display: flex;
   align-items: center;
@@ -71,34 +62,29 @@ body {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
   gap: 40px;
 }
-
 .coluna-esquerda {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .coluna-esquerda h1 {
   font-size: 40px;
   color: #222222;
   margin-bottom: 15px;
 }
-
 .coluna-esquerda h3 {
   font-size: 22px;
   color: #0056b3;
   margin-bottom: 20px;
   font-weight: normal;
 }
-
 .coluna-esquerda p {
   font-size: 16px;
   line-height: 1.6;
   color: #666666;
   margin-bottom: 30px;
 }
-
 .botao {
   text-decoration: none;
   background-color: rgb(5, 160, 0);
@@ -108,24 +94,20 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease;
 }
-
 .botao:hover {
   background-color: rgb(10, 58, 9);
 }
-
 .coluna-direita {
   flex: 1;
   display: flex;
   justify-content: center;
 }
-
 .coluna-direita img {
   width: 100%;
   max-width: 500px;
   border-radius: 8px;
   object-fit: cover;
 }
-
 @media (max-width: 768px) {
   .cabecalho-descolado {
     flex-direction: column;
@@ -133,12 +115,10 @@ body {
     padding: 30px 20px;
     text-align: center;
   }
-
   .coluna-esquerda {
     align-items: center;
   }
 }
-
 .rodape {
   width: 100%;
   background-color: #25292b;
@@ -146,7 +126,6 @@ body {
   color: #ffffff;
   padding: 50px 20px 0;
 }
-
 .conteudo-rodape {
   max-width: 1200px;
   margin: auto;
@@ -154,13 +133,11 @@ body {
   grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
   gap: 40px;
 }
-
 .coluna-rodape h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 26px;
   margin-bottom: 15px;
 }
-
 .coluna-rodape h3 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -168,37 +145,31 @@ body {
   padding-bottom: 8px;
   border-bottom: 1px solid #555555;
 }
-
 .coluna-rodape p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.6;
   color: #cccccc;
 }
-
 .coluna-rodape ul {
   list-style: none;
   padding: 0;
 }
-
 .coluna-rodape ul li {
   margin-bottom: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   color: #cccccc;
 }
-
 .coluna-rodape ul li a {
   color: #ffffff;
   text-decoration: none;
   transition: 0.3s;
 }
-
 .coluna-rodape ul li a:hover {
   color: rgb(5, 160, 0);
   padding-left: 5px;
 }
-
 .rodape-inferior {
   max-width: 1200px;
   margin: 40px auto 0;
@@ -206,39 +177,32 @@ body {
   padding: 20px 0;
   text-align: center;
 }
-
 .rodape-inferior p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   color: #aaaaaa;
 }
-
 @media (max-width: 900px) {
   .conteudo-rodape {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 600px) {
   .conteudo-rodape {
     grid-template-columns: 1fr;
   }
-
   .coluna-rodape {
     text-align: center;
   }
 }
-
 .pagina-hoteis {
   font-family: Arial, Helvetica, sans-serif;
   padding: 60px 20px;
 }
-
 .secao-hoteis {
   max-width: 1100px;
   margin: auto;
 }
-
 .titulo-hoteis {
   text-align: center;
   margin-bottom: 40px;
@@ -247,18 +211,15 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 .titulo-hoteis h1 {
   font-size: 36px;
   color: #222222;
   margin-bottom: 10px;
 }
-
 .titulo-hoteis p {
   font-size: 16px;
   color: #666666;
 }
-
 .card-hotel {
   display: flex;
   align-items: center;
@@ -272,19 +233,16 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card-hotel:hover {
   transform: translateY(-5px);
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
 }
-
 .imagem-hotel {
   width: 420px;
   height: 280px;
   min-width: 420px;
   flex-shrink: 0;
 }
-
 .imagem-hotel img {
   width: 100%;
   height: 100%;
@@ -292,7 +250,6 @@ body {
   object-fit: cover;
   border-radius: 10px;
 }
-
 .conteudo-hotel {
   flex: 1;
   padding: 0;
@@ -301,13 +258,11 @@ body {
   align-items: flex-start;
   justify-content: center;
 }
-
 .conteudo-hotel h2 {
   font-size: 27px;
   color: #222222;
   margin-bottom: 18px;
 }
-
 .conteudo-hotel p {
   font-size: 16px;
   line-height: 1.7;
@@ -315,7 +270,6 @@ body {
   margin-bottom: 25px;
   max-width: 650px;
 }
-
 .botao-hotel {
   text-decoration: none;
   background-color: rgb(5, 160, 0);
@@ -325,53 +279,43 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .botao-hotel:hover {
   background-color: rgb(10, 58, 9);
   transform: scale(1.03);
 }
-
 @media (max-width: 768px) {
   .pagina-hoteis {
     padding: 30px 15px;
   }
-
   .titulo-hoteis h1 {
     font-size: 30px;
   }
-
   .card-hotel {
     flex-direction: column;
     padding: 20px;
     gap: 25px;
   }
-
   .imagem-hotel {
     width: 100%;
     height: 230px;
     min-width: 0;
   }
-
   .conteudo-hotel {
     width: 100%;
     padding: 0;
   }
-
   .conteudo-hotel h2 {
     font-size: 23px;
   }
 }
-
 .pagina-contato {
   font-family: Arial, Helvetica, sans-serif;
   padding: 60px 20px;
 }
-
 .secao-contato {
   max-width: 1100px;
   margin: auto;
 }
-
 .titulo-contato {
   text-align: center;
   margin-bottom: 40px;
@@ -380,25 +324,21 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 .titulo-contato h1 {
   font-size: 36px;
   color: #222222;
   margin-bottom: 10px;
 }
-
 .titulo-contato p {
   font-size: 16px;
   color: #666666;
   line-height: 1.6;
 }
-
 .conteudo-contato {
   display: flex;
   gap: 35px;
   align-items: stretch;
 }
-
 .informacoes-contato,
 .formulario-contato {
   flex: 1;
@@ -407,48 +347,40 @@ body {
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-
 .informacoes-contato h2 {
   font-size: 28px;
   color: #222222;
   margin-bottom: 20px;
 }
-
 .informacoes-contato > p {
   color: #666666;
   line-height: 1.7;
   margin-bottom: 30px;
 }
-
 .item-contato {
   margin-bottom: 25px;
 }
-
 .item-contato h3 {
   font-size: 17px;
   color: rgb(5, 160, 0);
   margin-bottom: 6px;
 }
-
 .item-contato p {
   font-size: 15px;
   color: #666666;
   line-height: 1.5;
 }
-
 .campo-formulario {
   display: flex;
   flex-direction: column;
   margin-bottom: 20px;
 }
-
 .campo-formulario label {
   font-size: 15px;
   font-weight: bold;
   color: #333333;
   margin-bottom: 8px;
 }
-
 .campo-formulario input,
 .campo-formulario textarea {
   width: 100%;
@@ -460,16 +392,13 @@ body {
   outline: none;
   background-color: #ffffff;
 }
-
 .campo-formulario textarea {
   resize: vertical;
 }
-
 .campo-formulario input:focus,
 .campo-formulario textarea:focus {
   border-color: rgb(5, 160, 0);
 }
-
 .botao-contato {
   border: none;
   background-color: rgb(5, 160, 0);
@@ -481,11 +410,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
 .botao-contato:hover {
   background-color: rgb(10, 58, 9);
 }
-
 #mensagem-status {
   margin-top: 20px;
   font-family: Arial, Helvetica, sans-serif;
@@ -493,36 +420,29 @@ body {
   font-weight: bold;
   color: rgb(5, 160, 0);
 }
-
 @media (max-width: 768px) {
   .pagina-contato {
     padding: 30px 15px;
   }
-
   .conteudo-contato {
     flex-direction: column;
   }
-
   .titulo-contato h1 {
     font-size: 30px;
   }
-
   .informacoes-contato,
   .formulario-contato {
     padding: 25px;
   }
 }
-
 .pagina-turismo {
   font-family: Arial, Helvetica, sans-serif;
   padding: 60px 20px;
 }
-
 .secao-turismo {
   max-width: 1100px;
   margin: auto;
 }
-
 .titulo-turismo {
   text-align: center;
   margin-bottom: 40px;
@@ -531,13 +451,11 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 .titulo-turismo h1 {
   font-size: 36px;
   color: #222222;
   margin-bottom: 12px;
 }
-
 .titulo-turismo p {
   font-size: 16px;
   color: #666666;
@@ -545,26 +463,22 @@ body {
   max-width: 850px;
   margin: auto;
 }
-
 .area-tabela-turismo {
   background-color: #eeeedd;
   padding: 35px;
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-
 .area-tabela-turismo h2 {
   font-size: 28px;
   color: #222222;
   margin-bottom: 25px;
   text-align: center;
 }
-
 .tabela-responsiva {
   width: 100%;
   overflow-x: auto;
 }
-
 .tabela-turismo {
   width: 100%;
   border-collapse: collapse;
@@ -572,64 +486,51 @@ body {
   border-radius: 10px;
   overflow: hidden;
 }
-
 .tabela-turismo th,
 .tabela-turismo td {
   padding: 16px 18px;
   text-align: left;
   border-bottom: 1px solid #dddddd;
 }
-
 .tabela-turismo th {
   background-color: rgb(5, 160, 0);
   color: #ffffff;
   font-size: 15px;
 }
-
 .tabela-turismo td {
   font-size: 14px;
   color: #555555;
 }
-
 .tabela-turismo tbody tr:nth-child(even) {
   background-color: #f5f5f5;
 }
-
 .tabela-turismo tbody tr:hover {
   background-color: #e8f5e8;
 }
-
 @media (max-width: 768px) {
   .pagina-turismo {
     padding: 30px 15px;
   }
-
   .titulo-turismo {
     padding: 25px 20px;
   }
-
   .titulo-turismo h1 {
     font-size: 30px;
   }
-
   .area-tabela-turismo {
     padding: 20px;
   }
-
   .area-tabela-turismo h2 {
     font-size: 23px;
   }
-
   .tabela-turismo {
     min-width: 700px;
   }
 }
-
 .pagina-historia {
   font-family: Arial, Helvetica, sans-serif;
   padding: 60px 20px;
 }
-
 .apresentacao-historia {
   max-width: 1100px;
   margin: 0 auto 50px;
@@ -641,30 +542,25 @@ body {
   align-items: center;
   gap: 40px;
 }
-
 .texto-historia {
   flex: 1;
 }
-
 .texto-historia h1 {
   font-size: 40px;
   color: #222222;
   margin-bottom: 20px;
 }
-
 .texto-historia p {
   font-size: 16px;
   color: #666666;
   line-height: 1.7;
   margin-bottom: 18px;
 }
-
 .imagem-historia {
   width: 430px;
   height: 300px;
   flex-shrink: 0;
 }
-
 .imagem-historia img {
   width: 100%;
   height: 100%;
@@ -672,14 +568,12 @@ body {
   border-radius: 10px;
   display: block;
 }
-
 .secao-linha-tempo,
 .secao-midia-historia,
 .secao-curiosidades {
   max-width: 1100px;
   margin: 0 auto 50px;
 }
-
 .titulo-historia {
   text-align: center;
   background-color: #eeeedd;
@@ -688,25 +582,21 @@ body {
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
-
 .titulo-historia h2 {
   font-size: 30px;
   color: #222222;
   margin-bottom: 10px;
 }
-
 .titulo-historia p {
   font-size: 16px;
   color: #666666;
   line-height: 1.6;
 }
-
 .linha-tempo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
-
 .card-historia {
   background-color: #eeeedd;
   padding: 30px;
@@ -714,36 +604,30 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .card-historia:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.16);
 }
-
 .card-historia h3 {
   font-size: 26px;
   color: rgb(5, 160, 0);
   margin-bottom: 8px;
 }
-
 .card-historia h4 {
   font-size: 20px;
   color: #222222;
   margin-bottom: 15px;
 }
-
 .card-historia p {
   font-size: 15px;
   color: #666666;
   line-height: 1.6;
 }
-
 .conteudo-midia {
   display: flex;
   gap: 30px;
   align-items: stretch;
 }
-
 .bloco-video,
 .bloco-audio {
   flex: 1;
@@ -752,37 +636,31 @@ body {
   border-radius: 12px;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
 }
-
 .bloco-video h3,
 .bloco-audio h3 {
   font-size: 22px;
   color: #222222;
   margin-bottom: 20px;
 }
-
 .bloco-video video {
   width: 100%;
   border-radius: 10px;
   display: block;
 }
-
 .bloco-audio {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 .bloco-audio p {
   font-size: 15px;
   color: #666666;
   line-height: 1.6;
   margin-bottom: 25px;
 }
-
 .bloco-audio audio {
   width: 100%;
 }
-
 .caixa-curiosidade {
   background-color: #eeeedd;
   padding: 35px;
@@ -790,7 +668,6 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
   text-align: center;
 }
-
 #texto-curiosidade {
   min-height: 55px;
   font-size: 17px;
@@ -798,14 +675,12 @@ body {
   line-height: 1.6;
   margin-bottom: 25px;
 }
-
 .botoes-curiosidade {
   display: flex;
   justify-content: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-
 #botao-curiosidade,
 #botao-todas-curiosidades {
   border: none;
@@ -818,61 +693,649 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 #botao-curiosidade:hover,
 #botao-todas-curiosidades:hover {
   background-color: rgb(10, 58, 9);
   transform: scale(1.03);
 }
-
 #lista-curiosidades {
   margin-top: 30px;
   text-align: left;
 }
-
 #lista-curiosidades ul {
   list-style-position: inside;
 }
-
 #lista-curiosidades li {
   font-size: 15px;
   color: #555555;
   line-height: 1.6;
   margin-bottom: 12px;
 }
-
 @media (max-width: 768px) {
   .pagina-historia {
     padding: 30px 15px;
   }
-
   .apresentacao-historia {
     flex-direction: column;
     padding: 25px;
   }
-
   .texto-historia h1 {
     font-size: 32px;
   }
-
   .imagem-historia {
     width: 100%;
     height: 230px;
   }
-
   .linha-tempo {
     grid-template-columns: 1fr;
   }
-
   .conteudo-midia {
     flex-direction: column;
   }
-
   .titulo-historia h2 {
     font-size: 25px;
   }
-
   .caixa-curiosidade {
     padding: 25px;
+  }
+}
+.campo-formulario select {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 7px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: #333333;
+}
+.campo-formulario input:hover, .campo-formulario textarea:hover, .campo-formulario select:hover {
+  border-color: #888888;
+}
+.campo-formulario input:focus, .campo-formulario textarea:focus, .campo-formulario select:focus {
+  border-color: rgb(5, 160, 0);
+  outline: 2px solid rgba(5, 160, 0, 0.15);
+}
+.campo-formulario input:focus:invalid, .campo-formulario textarea:focus:invalid, .campo-formulario select:focus:invalid {
+  border-color: #c0392b;
+  outline-color: rgba(192, 57, 43, 0.15);
+}
+.campo-formulario input:not(:placeholder-shown):invalid, .campo-formulario textarea:not(:placeholder-shown):invalid {
+  border-color: #c0392b;
+}
+.historico-contato {
+  margin-top: 40px;
+  background-color: #eeeedd;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+.historico-contato h2 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+.historico-contato > p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.botoes-historico {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+#botao-historico, #botao-limpar {
+  border: none;
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+#botao-historico:hover {
+  background-color: rgb(10, 58, 9);
+}
+#botao-limpar {
+  background-color: #a03232;
+}
+#botao-limpar:hover {
+  background-color: #772222;
+}
+#lista-mensagens {
+  margin-top: 25px;
+}
+#lista-mensagens[hidden] {
+  display: none;
+}
+.card-mensagem {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-left: 5px solid rgb(5, 160, 0);
+  overflow-wrap: anywhere;
+}
+.card-mensagem h3 {
+  font-size: 20px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+.card-mensagem p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+}
+@media (max-width: 768px) {
+  .historico-contato {
+    padding: 25px;
+  }
+  .historico-contato h2 {
+    font-size: 24px;
+  }
+  .botoes-historico {
+    flex-direction: column;
+  }
+  #botao-historico, #botao-limpar {
+    width: 100%;
+  }
+}
+.pagina-gastronomia {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.secao-gastronomia {
+  max-width: 1100px;
+}
+
+.pagina-gastronomia .titulo-gastronomia {
+  background-color: #eeeedd;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-gastronomia h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.titulo-gastronomia p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: auto;
+}
+
+.alerta-gastronomia {
+  padding: 20px;
+  margin-bottom: 35px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.filtros-gastronomia {
+  background-color: #eeeedd;
+  padding: 30px;
+  margin-bottom: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.filtros-gastronomia h2 {
+  font-size: 26px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 25px;
+}
+
+.pagina-gastronomia .btn-success {
+  background-color: rgb(5, 160, 0);
+  border-color: rgb(5, 160, 0);
+  font-weight: bold;
+}
+
+.pagina-gastronomia .btn-success:hover {
+  background-color: rgb(10, 58, 9);
+  border-color: rgb(10, 58, 9);
+}
+
+.pagina-gastronomia .btn-outline-success {
+  color: rgb(5, 160, 0);
+  border-color: rgb(5, 160, 0);
+  font-weight: bold;
+}
+
+.pagina-gastronomia .btn-outline-success:hover {
+  color: #ffffff;
+  background-color: rgb(5, 160, 0);
+}
+
+.filtro-gastronomia {
+  border-radius: 30px;
+  padding: 10px 20px;
+}
+
+#resultado-gastronomia {
+  font-size: 14px;
+  color: #666666;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.pagina-gastronomia .card-gastronomia {
+  background-color: #eeeedd;
+  border: none;
+  border-radius: 12px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-gastronomia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.card-gastronomia .card-img-top {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-gastronomia .card-body {
+  padding: 20px 5px 5px;
+}
+
+.card-gastronomia .card-title {
+  font-size: 23px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.card-gastronomia .card-text {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.card-gastronomia .badge {
+  font-size: 12px;
+  padding: 8px 12px;
+}
+
+.card-gastronomia .btn {
+  border-radius: 30px;
+  padding: 12px 20px;
+}
+
+.informacoes-gastronomia {
+  background-color: #eeeedd;
+  padding: 35px;
+  margin-top: 45px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.informacoes-gastronomia h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.informacoes-gastronomia p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.informacoes-gastronomia .btn {
+  padding: 13px 25px;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .pagina-gastronomia {
+    padding: 30px 15px;
+  }
+
+  .titulo-gastronomia {
+    padding: 25px 20px;
+  }
+
+  .titulo-gastronomia h1 {
+    font-size: 30px;
+  }
+
+  .filtros-gastronomia {
+    padding: 25px 15px;
+  }
+
+  .filtros-gastronomia h2 {
+    font-size: 23px;
+  }
+
+  .card-gastronomia .card-img-top {
+    height: 230px;
+  }
+
+  .informacoes-gastronomia {
+    padding: 25px 20px;
+  }
+
+  .informacoes-gastronomia h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .filtro-gastronomia {
+    width: 100%;
+  }
+
+  .card-gastronomia .card-img-top {
+    height: 200px;
+  }
+}
+
+.barra-navegacao .menu-links {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.barra-navegacao .menu-links a {
+  display: inline-block;
+}
+
+.rodape ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+.rodape h2,
+.rodape h3 {
+  font-weight: bold;
+}
+
+.pagina-museus {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 60px 20px;
+}
+
+.secao-museus {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.titulo-museus {
+  text-align: center;
+  margin-bottom: 40px;
+  background-color: #eeeedd;
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.titulo-museus h1 {
+  font-size: 36px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.titulo-museus p {
+  font-size: 16px;
+  color: #666666;
+  line-height: 1.6;
+}
+
+.card-museu {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 340px;
+  background-color: #eeeedd;
+  border-radius: 12px;
+  padding: 30px;
+  gap: 35px;
+  margin-bottom: 35px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-museu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.imagem-museu {
+  width: 420px;
+  height: 280px;
+  flex-shrink: 0;
+}
+
+.imagem-museu img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.conteudo-museu {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.conteudo-museu h2 {
+  font-size: 26px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.conteudo-museu p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.7;
+  margin-bottom: 18px;
+}
+
+.conteudo-museu .localizacao-museu {
+  color: rgb(5, 160, 0);
+  font-weight: bold;
+}
+
+.botoes-museu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.botao-museu,
+.botao-favorito,
+#limpar-favoritos {
+  border: none;
+  padding: 13px 23px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botao-museu {
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+}
+
+.botao-museu:hover {
+  background-color: rgb(10, 58, 9);
+  color: #ffffff;
+}
+
+.botao-favorito {
+  background-color: #ffffff;
+  color: rgb(5, 160, 0);
+  border: 1px solid rgb(5, 160, 0);
+}
+
+.botao-favorito:hover {
+  background-color: #e1f3df;
+}
+
+.botao-favorito.favoritado {
+  background-color: rgb(5, 160, 0);
+  color: #ffffff;
+}
+
+.botao-favorito.favoritado:hover {
+  background-color: rgb(10, 58, 9);
+}
+
+.secao-favoritos {
+  margin-top: 45px;
+  padding: 35px;
+  background-color: #eeeedd;
+  border-radius: 12px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.secao-favoritos h2 {
+  font-size: 28px;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.secao-favoritos > p {
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#quantidade-favoritos {
+  font-weight: bold;
+  color: rgb(5, 160, 0);
+}
+
+#lista-favoritos {
+  margin-bottom: 25px;
+}
+
+.item-favorito {
+  background-color: #ffffff;
+  border-left: 5px solid rgb(5, 160, 0);
+  padding: 15px 20px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  color: #444444;
+  font-size: 15px;
+}
+
+#limpar-favoritos {
+  background-color: #a03232;
+  color: #ffffff;
+}
+
+#limpar-favoritos:hover {
+  background-color: #772222;
+}
+
+#limpar-favoritos:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#status-favoritos {
+  margin-top: 15px;
+  font-weight: bold;
+  color: rgb(5, 160, 0);
+}
+
+@media (max-width: 900px) {
+  .card-museu {
+    gap: 25px;
+  }
+
+  .imagem-museu {
+    width: 38%;
+    height: 240px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pagina-museus {
+    padding: 30px 15px;
+  }
+
+  .titulo-museus {
+    padding: 25px 20px;
+  }
+
+  .titulo-museus h1 {
+    font-size: 30px;
+  }
+
+  .card-museu {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .imagem-museu {
+    width: 100%;
+    height: 230px;
+  }
+
+  .conteudo-museu h2 {
+    font-size: 23px;
+  }
+
+  .secao-favoritos {
+    padding: 25px;
+  }
+
+  .secao-favoritos h2 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .botoes-museu {
+    flex-direction: column;
+  }
+
+  .botao-museu,
+  .botao-favorito {
+    width: 100%;
+    text-align: center;
+  }
+
+  .imagem-museu {
+    height: 200px;
   }
 }

@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turismo em Curitiba</title>
+    <title>Turismo em Curitiba - Contato</title>
 
     <link rel="icon" href="img/turismo-curitiba-selo.png">
-
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,13 +13,13 @@
 <header>
   <nav class="barra-navegacao">
     <a href="index.html" class="logonav">
-    <img src="img/Turismo Curitiba em Caligrafia Negra.png" alt="Turismo em curitiba logo"/>
+      <img src="img/Turismo Curitiba em Caligrafia Negra.png" alt="Turismo em Curitiba logo">
     </a>
 
     <ul class="menu-links">
       <li><a href="index.html">Início</a></li>
       <li><a href="turismo.html">Turismo</a></li>
-      <li><a href="hoteis.html">Hoteis</a></li>
+      <li><a href="hoteis.html">Hotéis</a></li>
       <li><a href="contato.html">Contato</a></li>
     </ul>
   </nav>
@@ -34,7 +33,7 @@
       <h1>Entre em Contato</h1>
       <p>
         Tem alguma dúvida, sugestão ou quer saber mais sobre Curitiba?
-        Envie uma mensagem para nós.
+        Registre uma mensagem para nós.
       </p>
     </div>
 
@@ -78,6 +77,10 @@
               id="nome"
               name="nome"
               placeholder="Digite seu nome"
+              minlength="3"
+              maxlength="80"
+              pattern="[A-Za-zÀ-ÿ ]{3,80}"
+              title="Utilize apenas letras e espaços, com pelo menos 3 caracteres."
               required
             >
           </div>
@@ -100,8 +103,22 @@
               id="assunto"
               name="assunto"
               placeholder="Digite o assunto"
+              minlength="5"
+              maxlength="100"
               required
             >
+          </div>
+
+          <div class="campo-formulario">
+            <label for="motivo">Motivo do contato</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Dúvida">Dúvida</option>
+              <option value="Sugestão">Sugestão</option>
+              <option value="Pontos turísticos">Pontos turísticos</option>
+              <option value="Hotéis">Hotéis</option>
+              <option value="Outros">Outros</option>
+            </select>
           </div>
 
           <div class="campo-formulario">
@@ -111,29 +128,57 @@
               name="mensagem"
               rows="6"
               placeholder="Digite sua mensagem"
+              minlength="10"
+              maxlength="1000"
               required
             ></textarea>
           </div>
 
           <button type="submit" class="botao-contato">
-            Enviar mensagem
+            Salvar mensagem
           </button>
-          
-          <p id="mensagem-status"></p>
-          
+
+          <p id="mensagem-status" role="status" aria-live="polite"></p>
+
         </form>
 
       </div>
 
     </div>
 
+    <section class="historico-contato">
+
+      <h2>Histórico de mensagens</h2>
+
+      <p>
+        Consulte as mensagens registradas neste navegador.
+        Os dados ficam armazenados localmente e não são enviados por e-mail.
+      </p>
+
+      <div class="botoes-historico">
+        <button
+          type="button"
+          id="botao-historico"
+          aria-expanded="false"
+          aria-controls="lista-mensagens"
+        >
+          Mostrar mensagens
+        </button>
+
+        <button type="button" id="botao-limpar">
+          Limpar histórico
+        </button>
+      </div>
+
+      <div id="lista-mensagens" hidden></div>
+
+    </section>
+
   </section>
 
 </main>
 
-
-
-  <footer class="rodape">
+<footer class="rodape">
   <div class="conteudo-rodape">
 
     <div class="coluna-rodape">
@@ -149,8 +194,7 @@
       <ul>
         <li><a href="index.html">Início</a></li>
         <li><a href="historia.html">História de Curitiba</a></li>
-        <li><a href="#">Sobre o projeto</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a href="contato.html">Contato</a></li>
       </ul>
     </div>
 
@@ -158,17 +202,17 @@
       <h3>Explore Curitiba</h3>
       <ul>
         <li><a href="#">Pontos Turísticos</a></li>
-        <li><a href="#">Parques</a></li>
-        <li><a href="#">Museus</a></li>
-        <li><a href="#">Gastronomia</a></li>
-        <li><a href="#">Eventos</a></li>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="museus.html">Museus</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
       </ul>
     </div>
 
     <div class="coluna-rodape">
       <h3>Onde ficar</h3>
       <ul>
-        <li><a href="#">Hotéis</a></li>
+        <li><a href="hoteis.html">Hotéis</a></li>
         <li><a href="#">Hostels</a></li>
         <li><a href="#">Apartamentos</a></li>
         <li><a href="#">Região Central</a></li>
@@ -180,8 +224,8 @@
       <ul>
         <li>Curitiba - Paraná</li>
         <li><a href="#">Fale Conosco</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Facebook</a></li>
+        <li><a href="https://www.instagram.com/curitiba_pmc/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/PrefsCuritiba">Facebook</a></li>
       </ul>
     </div>
 
@@ -192,6 +236,7 @@
   </div>
 </footer>
 
-  <script src="js/script.js"></script>
+<script src="js/script.js"></script>
+
 </body>
 </html>
