@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museus de Curitiba</title>
+
+    <link rel="icon" href="img/turismo-curitiba-selo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="barra-navegacao">
+    <a href="index.html" class="logonav">
+      <img src="img/Turismo Curitiba em Caligrafia Negra.png" alt="Turismo em Curitiba">
+    </a>
+
+    <ul class="menu-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="turismo.html">Turismo</a></li>
+      <li><a href="hoteis.html">Hotéis</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-museus">
+
+  <section class="secao-museus">
+
+    <div class="titulo-museus">
+      <h1>Museus de Curitiba</h1>
+      <p>
+        Conheça alguns dos principais museus da capital paranaense.
+        Explore a história, a arte e a cultura da cidade e
+        salve seus museus favoritos para visitar depois.
+      </p>
+    </div>
+
+    <div class="lista-museus">
+
+      <article class="card-museu" data-id="mon">
+
+        <div class="imagem-museu">
+          <img src="img/museu-oscar-niemeyer.jpg" alt="Museu Oscar Niemeyer">
+        </div>
+
+        <div class="conteudo-museu">
+          <h2>Museu Oscar Niemeyer</h2>
+
+          <p>
+            Conhecido como Museu do Olho, o Museu Oscar Niemeyer
+            é um dos principais espaços culturais de Curitiba.
+            Apresenta exposições de arte, arquitetura e design,
+            além de possuir uma arquitetura marcante.
+          </p>
+
+          <p class="localizacao-museu">Centro Cívico - Curitiba</p>
+
+          <div class="botoes-museu">
+            <a href="https://www.museuoscarniemeyer.org.br/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao-museu">
+              Saiba mais
+            </a>
+
+            <button type="button" class="botao-favorito" data-id="mon" aria-pressed="false">
+              Adicionar aos favoritos
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-museu" data-id="mupa">
+
+        <div class="imagem-museu">
+          <img src="img/museu-paranaense.jpg" alt="Museu Paranaense">
+        </div>
+
+        <div class="conteudo-museu">
+          <h2>Museu Paranaense</h2>
+
+          <p>
+            Fundado em 1876, o Museu Paranaense preserva
+            importantes registros sobre a história do Paraná.
+            Seu acervo reúne peças relacionadas à arqueologia,
+            antropologia e história da região.
+          </p>
+
+          <p class="localizacao-museu">São Francisco - Curitiba</p>
+
+          <div class="botoes-museu">
+            <a href="https://www.museuparanaense.pr.gov.br/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao-museu">
+              Saiba mais
+            </a>
+
+            <button type="button" class="botao-favorito" data-id="mupa" aria-pressed="false">
+              Adicionar aos favoritos
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-museu" data-id="mis">
+
+        <div class="imagem-museu">
+          <img src="img/museu-imagem-som.jpg" alt="Museu da Imagem e do Som do Paraná">
+        </div>
+
+        <div class="conteudo-museu">
+          <h2>Museu da Imagem e do Som</h2>
+
+          <p>
+            O Museu da Imagem e do Som do Paraná preserva
+            a memória audiovisual do estado. Possui acervos
+            relacionados ao cinema, fotografia, música e
+            outras formas de expressão cultural.
+          </p>
+
+          <p class="localizacao-museu">Centro - Curitiba</p>
+
+          <div class="botoes-museu">
+            <a href="https://www.mis.pr.gov.br/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao-museu">
+              Saiba mais
+            </a>
+
+            <button type="button" class="botao-favorito" data-id="mis" aria-pressed="false">
+              Adicionar aos favoritos
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-museu" data-id="holocausto">
+
+        <div class="imagem-museu">
+          <img src="img/museu-holocausto.jpg" alt="Museu do Holocausto de Curitiba">
+        </div>
+
+        <div class="conteudo-museu">
+          <h2>Museu do Holocausto de Curitiba</h2>
+
+          <p>
+            Espaço dedicado à preservação da memória das
+            vítimas e sobreviventes do Holocausto. O museu
+            promove reflexões sobre direitos humanos,
+            intolerância, discriminação e a importância
+            da memória histórica.
+          </p>
+
+          <p class="localizacao-museu">Bom Retiro - Curitiba</p>
+
+          <div class="botoes-museu">
+            <a href="https://museudoholocausto.org.br/"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="botao-museu">
+              Saiba mais
+            </a>
+
+            <button type="button" class="botao-favorito" data-id="holocausto" aria-pressed="false">
+              Adicionar aos favoritos
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+    <section class="secao-favoritos">
+
+      <h2>Meus Museus Favoritos</h2>
+
+      <p>
+        Salve os museus que deseja conhecer.
+        Suas escolhas ficarão armazenadas neste navegador.
+      </p>
+
+      <p id="quantidade-favoritos" aria-live="polite">
+        Você possui 0 museus favoritos.
+      </p>
+
+      <div id="lista-favoritos"></div>
+
+      <button type="button" id="limpar-favoritos">
+        Limpar favoritos
+      </button>
+
+      <p id="status-favoritos" role="status" aria-live="polite"></p>
+
+    </section>
+
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="conteudo-rodape">
+
+    <div class="coluna-rodape">
+      <h2>Turismo Curitiba</h2>
+      <p>
+        Conheça Curitiba, seus principais pontos turísticos,
+        parques, cultura, gastronomia e lugares históricos.
+      </p>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Sobre</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História de Curitiba</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Explore Curitiba</h3>
+      <ul>
+        <li><a href="#">Pontos Turísticos</a></li>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="museus.html">Museus</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Onde ficar</h3>
+      <ul>
+        <li><a href="hoteis.html">Hotéis</a></li>
+        <li><a href="#">Hostels</a></li>
+        <li><a href="#">Apartamentos</a></li>
+        <li><a href="#">Região Central</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Contato</h3>
+      <ul>
+        <li>Curitiba - Paraná</li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="https://www.instagram.com/curitiba_pmc/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/PrefsCuritiba">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="rodape-inferior">
+    <p>&copy; 2026 Turismo em Curitiba. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

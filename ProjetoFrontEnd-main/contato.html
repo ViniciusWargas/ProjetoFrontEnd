@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo em Curitiba - Contato</title>
+
+    <link rel="icon" href="img/turismo-curitiba-selo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="barra-navegacao">
+    <a href="index.html" class="logonav">
+      <img src="img/Turismo Curitiba em Caligrafia Negra.png" alt="Turismo em Curitiba logo">
+    </a>
+
+    <ul class="menu-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="turismo.html">Turismo</a></li>
+      <li><a href="hoteis.html">Hotéis</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-contato">
+
+  <section class="secao-contato">
+
+    <div class="titulo-contato">
+      <h1>Entre em Contato</h1>
+      <p>
+        Tem alguma dúvida, sugestão ou quer saber mais sobre Curitiba?
+        Registre uma mensagem para nós.
+      </p>
+    </div>
+
+    <div class="conteudo-contato">
+
+      <div class="informacoes-contato">
+
+        <h2>Informações</h2>
+
+        <p>
+          Entre em contato para tirar dúvidas, enviar sugestões
+          ou compartilhar informações sobre turismo em Curitiba.
+        </p>
+
+        <div class="item-contato">
+          <h3>Localização</h3>
+          <p>Curitiba - Paraná</p>
+        </div>
+
+        <div class="item-contato">
+          <h3>E-mail</h3>
+          <p>contato@turismocuritiba.com.br</p>
+        </div>
+
+        <div class="item-contato">
+          <h3>Atendimento</h3>
+          <p>Segunda a sexta-feira</p>
+          <p>08:00 às 18:00</p>
+        </div>
+
+      </div>
+
+      <div class="formulario-contato">
+
+        <form id="form-contato">
+
+          <div class="campo-formulario">
+            <label for="nome">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Digite seu nome"
+              minlength="3"
+              maxlength="80"
+              pattern="[A-Za-zÀ-ÿ ]{3,80}"
+              title="Utilize apenas letras e espaços, com pelo menos 3 caracteres."
+              required
+            >
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            >
+          </div>
+
+          <div class="campo-formulario">
+            <label for="assunto">Assunto</label>
+            <input
+              type="text"
+              id="assunto"
+              name="assunto"
+              placeholder="Digite o assunto"
+              minlength="5"
+              maxlength="100"
+              required
+            >
+          </div>
+
+          <div class="campo-formulario">
+            <label for="motivo">Motivo do contato</label>
+            <select id="motivo" name="motivo" required>
+              <option value="">Selecione uma opção</option>
+              <option value="Dúvida">Dúvida</option>
+              <option value="Sugestão">Sugestão</option>
+              <option value="Pontos turísticos">Pontos turísticos</option>
+              <option value="Hotéis">Hotéis</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              rows="6"
+              placeholder="Digite sua mensagem"
+              minlength="10"
+              maxlength="1000"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao-contato">
+            Salvar mensagem
+          </button>
+
+          <p id="mensagem-status" role="status" aria-live="polite"></p>
+
+        </form>
+
+      </div>
+
+    </div>
+
+    <section class="historico-contato">
+
+      <h2>Histórico de mensagens</h2>
+
+      <p>
+        Consulte as mensagens registradas neste navegador.
+        Os dados ficam armazenados localmente e não são enviados por e-mail.
+      </p>
+
+      <div class="botoes-historico">
+        <button
+          type="button"
+          id="botao-historico"
+          aria-expanded="false"
+          aria-controls="lista-mensagens"
+        >
+          Mostrar mensagens
+        </button>
+
+        <button type="button" id="botao-limpar">
+          Limpar histórico
+        </button>
+      </div>
+
+      <div id="lista-mensagens" hidden></div>
+
+    </section>
+
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="conteudo-rodape">
+
+    <div class="coluna-rodape">
+      <h2>Turismo Curitiba</h2>
+      <p>
+        Conheça Curitiba, seus principais pontos turísticos,
+        parques, cultura, gastronomia e lugares históricos.
+      </p>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Sobre</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História de Curitiba</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Explore Curitiba</h3>
+      <ul>
+        <li><a href="#">Pontos Turísticos</a></li>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="museus.html">Museus</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Onde ficar</h3>
+      <ul>
+        <li><a href="hoteis.html">Hotéis</a></li>
+        <li><a href="#">Hostels</a></li>
+        <li><a href="#">Apartamentos</a></li>
+        <li><a href="#">Região Central</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Contato</h3>
+      <ul>
+        <li>Curitiba - Paraná</li>
+        <li><a href="#">Fale Conosco</a></li>
+        <li><a href="https://www.instagram.com/curitiba_pmc/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/PrefsCuritiba">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="rodape-inferior">
+    <p>&copy; 2026 Turismo em Curitiba. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
