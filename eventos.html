@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em Curitiba</title>
+
+    <link rel="icon" href="img/turismo-curitiba-selo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="barra-navegacao">
+    <a href="index.html" class="logonav">
+      <img src="img/Turismo Curitiba em Caligrafia Negra.png" alt="Turismo em Curitiba">
+    </a>
+
+    <ul class="menu-links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="turismo.html">Turismo</a></li>
+      <li><a href="hoteis.html">Hotéis</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    
+      <li><a href="https://turismo.curitiba.pr.gov.br/" target="_blank" rel="noopener noreferrer">Turismo Oficial</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="pagina-eventos">
+
+  <section class="secao-eventos">
+
+    <div class="titulo-eventos">
+      <h1>Eventos em Curitiba</h1>
+      <p>
+        Feiras, festivais e atividades culturais para encaixar na sua viagem.
+        Marque os eventos de interesse e monte sua lista de passeios.
+      </p>
+      <p class="aviso-eventos">
+        Os períodos são aproximados. Confirme datas e horários nos canais oficiais antes de ir.
+      </p>
+    </div>
+
+    <div class="filtros-eventos">
+      <h2>Filtrar por categoria</h2>
+
+      <div class="botoes-filtro-eventos">
+        <button type="button" class="filtro-evento ativo" data-categoria="todos" aria-pressed="true">Todos</button>
+        <button type="button" class="filtro-evento" data-categoria="feiras" aria-pressed="false">Feiras</button>
+        <button type="button" class="filtro-evento" data-categoria="festivais" aria-pressed="false">Festivais</button>
+        <button type="button" class="filtro-evento" data-categoria="cultura" aria-pressed="false">Cultura</button>
+      </div>
+
+      <p id="resultado-eventos" role="status" aria-live="polite">Exibindo 5 eventos.</p>
+    </div>
+
+    <div class="lista-eventos">
+
+      <article class="card-evento" data-id="largo" data-categoria="feiras">
+
+        <div class="imagem-evento">
+          <img src="img/feira do largo da ordem.webp" alt="Feira do Largo da Ordem">
+        </div>
+
+        <div class="conteudo-evento">
+          <h2>Feira do Largo da Ordem</h2>
+
+          <p>Uma das feiras de artesanato mais tradicionais do país acontece no centro histórico. Barracas de artesanato, antiguidades e comidas típicas ocupam as ruas ao redor das igrejas e casarões.</p>
+
+          <p class="data-evento">Todo domingo</p>
+          <p class="localizacao-evento">Largo da Ordem - Centro</p>
+
+          <div class="botoes-evento">
+            <button type="button" class="botao-interesse" data-id="largo" aria-pressed="false">
+              Tenho interesse
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-evento" data-id="teatro" data-categoria="festivais">
+
+        <div class="imagem-evento">
+          <img src="img/festival-de teatro curitiba.webp" alt="Festival de Teatro de Curitiba">
+        </div>
+
+        <div class="conteudo-evento">
+          <h2>Festival de Teatro de Curitiba</h2>
+
+          <p>Reúne espetáculos nacionais e internacionais em teatros e espaços culturais da cidade, além de uma programação paralela com apresentações independentes.</p>
+
+          <p class="data-evento">Março / Abril</p>
+          <p class="localizacao-evento">Vários locais da cidade</p>
+
+          <div class="botoes-evento">
+            <button type="button" class="botao-interesse" data-id="teatro" aria-pressed="false">
+              Tenho interesse
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-evento" data-id="exposicoes" data-categoria="cultura">
+
+        <div class="imagem-evento">
+          <img src="img/exposicoes oscar.webp" alt="Museu Oscar Niemeyer">
+        </div>
+
+        <div class="conteudo-evento">
+          <h2>Exposições no Museu Oscar Niemeyer</h2>
+
+          <p>O Museu do Olho renova a programação ao longo do ano com mostras de arte, arquitetura e design, que podem ser combinadas com uma visita ao museu.</p>
+
+          <p class="data-evento">O ano todo</p>
+          <p class="localizacao-evento">Centro Cívico - Curitiba</p>
+
+          <div class="botoes-evento">
+            <button type="button" class="botao-interesse" data-id="exposicoes" aria-pressed="false">
+              Tenho interesse
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-evento" data-id="jardim" data-categoria="cultura">
+
+        <div class="imagem-evento">
+          <img src="img/passeio cultura.webp" alt="Jardim Botânico de Curitiba">
+        </div>
+
+        <div class="conteudo-evento">
+          <h2>Passeios culturais no Jardim Botânico</h2>
+
+          <p>O cartão-postal da cidade recebe visitantes o ano inteiro e costuma abrigar atividades de lazer e educação ambiental em seus jardins e na estufa de vidro.</p>
+
+          <p class="data-evento">O ano todo</p>
+          <p class="localizacao-evento">Jardim Botânico - Curitiba</p>
+
+          <div class="botoes-evento">
+            <button type="button" class="botao-interesse" data-id="jardim" aria-pressed="false">
+              Tenho interesse
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="card-evento" data-id="natal" data-categoria="festivais">
+
+        <div class="imagem-evento">
+          <img src="img/natal curitiba.webp" alt="Decoração de Natal">
+        </div>
+
+        <div class="conteudo-evento">
+          <h2>Natal em Curitiba</h2>
+
+          <p>No fim do ano a cidade ganha decoração especial, árvores iluminadas e apresentações de coral em pontos históricos do centro.</p>
+
+          <p class="data-evento">Dezembro</p>
+          <p class="localizacao-evento">Centro histórico - Curitiba</p>
+
+          <div class="botoes-evento">
+            <button type="button" class="botao-interesse" data-id="natal" aria-pressed="false">
+              Tenho interesse
+            </button>
+          </div>
+        </div>
+
+      </article>
+
+    </div>
+
+    <section class="secao-interesses">
+
+      <h2>Minha Agenda de Eventos</h2>
+
+      <p>
+        Os eventos marcados ficam salvos neste navegador.
+      </p>
+
+      <p id="quantidade-interesses" aria-live="polite">
+        Você marcou 0 eventos.
+      </p>
+
+      <div id="lista-interesses"></div>
+
+      <button type="button" id="limpar-interesses">
+        Limpar agenda
+      </button>
+
+      <p id="status-interesses" role="status" aria-live="polite"></p>
+
+    </section>
+
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <div class="conteudo-rodape">
+
+    <div class="coluna-rodape">
+      <h2>Turismo Curitiba</h2>
+      <p>
+        Conheça Curitiba, seus principais pontos turísticos,
+        parques, cultura, gastronomia e lugares históricos.
+      </p>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Sobre</h3>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="historia.html">História de Curitiba</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="galeria.html">Galeria de Fotos</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Explore Curitiba</h3>
+      <ul>
+        <li><a href="parques.html">Parques</a></li>
+        <li><a href="museus.html">Museus</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="eventos.html">Eventos</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Onde ficar</h3>
+      <ul>
+        <li><a href="hoteis.html">Hotéis</a></li>
+      </ul>
+    </div>
+
+    <div class="coluna-rodape">
+      <h3>Contato</h3>
+      <ul>
+        <li>Curitiba - Paraná</li>
+        <li><a href="contato.html">Fale Conosco</a></li>
+        <li><a href="https://www.instagram.com/curitiba_pmc/">Instagram</a></li>
+        <li><a href="https://www.facebook.com/PrefsCuritiba">Facebook</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="rodape-inferior">
+    <p>&copy; 2026 Turismo em Curitiba. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
